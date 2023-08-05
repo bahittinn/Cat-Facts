@@ -76,7 +76,7 @@
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Detay Gir"/>
                                         <connections>
-                                            <segue destination="BYZ-38-t0r" kind="show" id="kNK-Gb-18e"/>
+                                            <segue destination="wB1-Yf-atw" kind="show" id="HlS-jk-vPW"/>
                                         </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="square.and.arrow.up.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="1ez-2D-7xn">
@@ -122,7 +122,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pMf-Ps-Zae" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1686.2595419847328" y="3.5211267605633805"/>
+            <point key="canvasLocation" x="1564" y="4"/>
+        </scene>
+        <!--Deneme View Controller-->
+        <scene sceneID="UVd-uP-ip3">
+            <objects>
+                <viewController id="wB1-Yf-atw" customClass="DenemeViewController" customModule="Cat_Facts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3wN-jh-odQ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zZM-JA-u9c">
+                                <rect key="frame" x="175.66666666666666" y="415.66666666666669" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5cC-pA-uRd">
+                                <rect key="frame" x="162.66666666666666" y="466.66666666666669" width="62.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Arttır"/>
+                                <connections>
+                                    <action selector="buttonCount:" destination="wB1-Yf-atw" eventType="touchUpInside" id="Eau-Au-DAe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XtP-dX-LoL"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="5cC-pA-uRd" firstAttribute="leading" secondItem="zZM-JA-u9c" secondAttribute="leading" constant="-13" id="BJO-l9-fPf"/>
+                            <constraint firstItem="5cC-pA-uRd" firstAttribute="top" secondItem="zZM-JA-u9c" secondAttribute="bottom" constant="30" id="UDq-dL-hNd"/>
+                            <constraint firstItem="zZM-JA-u9c" firstAttribute="centerY" secondItem="3wN-jh-odQ" secondAttribute="centerY" id="ZWg-kN-7fn"/>
+                            <constraint firstItem="zZM-JA-u9c" firstAttribute="centerX" secondItem="3wN-jh-odQ" secondAttribute="centerX" id="jU2-0l-N6z"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="EQv-Io-El3"/>
+                    <connections>
+                        <outlet property="labelCount" destination="zZM-JA-u9c" id="ht2-oe-adM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="qct-rf-zD6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1563" y="715"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -231,9 +272,6 @@
             <point key="canvasLocation" x="759.5419847328244" y="3.5211267605633805"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="rv3-Mr-nYa"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <image name="location.magnifyingglass" catalog="system" width="128" height="117"/>
         <image name="square.and.arrow.up.fill" catalog="system" width="115" height="128"/>
