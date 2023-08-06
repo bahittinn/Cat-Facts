@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		646044052A804B90000CC574 /* SelectImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 646044042A804B90000CC574 /* SelectImageViewController.swift */; };
 		6480A57F2A7D8C1200EC4BF7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480A57E2A7D8C1200EC4BF7 /* AppDelegate.swift */; };
 		6480A5812A7D8C1200EC4BF7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480A5802A7D8C1200EC4BF7 /* SceneDelegate.swift */; };
 		6480A5832A7D8C1200EC4BF7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6480A5822A7D8C1200EC4BF7 /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		646044042A804B90000CC574 /* SelectImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectImageViewController.swift; sourceTree = "<group>"; };
 		6480A57B2A7D8C1200EC4BF7 /* Cat-Facts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Cat-Facts.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		6480A57E2A7D8C1200EC4BF7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6480A5802A7D8C1200EC4BF7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -100,6 +102,7 @@
 				6480A5992A7D96A600EC4BF7 /* DetailViewController.swift */,
 				6480A59B2A7DA60400EC4BF7 /* SelectViewController.swift */,
 				64995B5D2A7EE6B60070B70D /* DenemeViewController.swift */,
+				646044042A804B90000CC574 /* SelectImageViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -198,6 +201,7 @@
 				6480A57F2A7D8C1200EC4BF7 /* AppDelegate.swift in Sources */,
 				6480A59A2A7D96A600EC4BF7 /* DetailViewController.swift in Sources */,
 				6480A5812A7D8C1200EC4BF7 /* SceneDelegate.swift in Sources */,
+				646044052A804B90000CC574 /* SelectImageViewController.swift in Sources */,
 				6480A59C2A7DA60400EC4BF7 /* SelectViewController.swift in Sources */,
 				6480A5982A7D910E00EC4BF7 /* Facts.swift in Sources */,
 				64995B5E2A7EE6B60070B70D /* DenemeViewController.swift in Sources */,

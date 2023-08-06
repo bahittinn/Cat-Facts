@@ -7,29 +7,25 @@
 
 import UIKit
 
-protocol CounterDelegate: AnyObject {
-    func counterPlus(count: Int)
-}
 
-class DenemeViewController: UIViewController,CounterDelegate {
-    var delegate: CounterDelegate?
-    var countter = 0
-    func counterPlus(count: Int) {
-        countter += 1
-        print("dneme")
-        labelCount.text = "\(countter)"
-    }
-        
+
+class DenemeViewController: UIViewController,SelectImageDelegate {
+ 
     
-
-    @IBOutlet weak var labelCount: UILabel!
-
+    @IBOutlet weak var showImage: UIImageView!
+    
+    @IBOutlet weak var showLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
-        DenemeViewController().delegate = self
+        
     }
-    @IBAction func buttonCount(_ sender: UIButton) {
-        counterPlus(count: countter)
+    @IBAction func selectScreenTapped(_ sender: Any) {
+        let selectionVC =  storyboard?.instantiateViewController(withIdentifier: "delegateDetail") as! SelectImageViewController
+        selectionVC.delegate = self
+        present(selectionVC, animated: true)
+    }
+    func didSelectItem(imageName: String) {
+        showImage.image = UIImage(systemName: imageName)
+        showLabel.text = imageName
     }
 }
- 
