@@ -202,6 +202,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="searchBar" destination="CO7-nM-74K" id="YKc-jz-Emx"/>
                         <outlet property="tableView" destination="sAd-gT-trN" id="nbb-wM-Z10"/>
                     </connections>
                 </viewController>
